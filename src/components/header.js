@@ -8,13 +8,15 @@ class Header extends Component {
     const { currentNum, currentWeight, eatenApples } = this.props.apples
     return (
         <div className="header">
-          <div className="title">苹果篮子</div>
-          <div className="">
-            <div className="current">
-              <span>当前{currentNum}个，{currentWeight}克</span>
+          <div className="header-title">苹果篮子</div>
+          <div className="header-resume">
+            <div className="header-resume-current">
+              <span>当前</span>
+              <span>{currentNum}个，{currentWeight}克</span>
             </div>
-            <div className="eaten">
-            <span>吃掉{eatenApples.num}个，{eatenApples.weight}克</span>
+            <div className="header-resume-eaten">
+            <span>吃掉</span>
+            <span>{eatenApples.num}个，{eatenApples.weight}克</span>
             </div>
           </div>
         </div>

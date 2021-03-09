@@ -7,11 +7,11 @@ class AppleList extends Component {
   render() {
     const { currentApples, eat } = this.props.apples
     return (
-      <ul>
+      <ul className="appleList">
         {currentApples.map((apple, index) => (
-          <li key={index}>
+          <li className="appleList-item" key={index}>
             <span>红苹果{apple.id}号{apple.weight}克</span>
-            <button onClick={() => eat(index)}>吃掉</button>
+            <button className="appleList-item-btn" onClick={() => eat(index)}>吃掉</button>
           </li>
         )
         )}

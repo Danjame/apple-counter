@@ -7,8 +7,8 @@ class Footer extends Component {
   render() {
     const { pick } = this.props.apples
     return (
-      <div>
-        <button onClick={pick} >摘苹果</button>
+      <div className="footer">
+        <button className="footer-btn" onClick={ pick }>摘苹果</button>
       </div>
     )
   }
