@@ -1,8 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
+.header{
+  background: red;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +44,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,23 +1,18 @@
-// import './App.css';
+import React, { Component } from 'react'
+import Header from './components/header'
 import AppleList from './components/appleList'
-import { inject, observer } from 'mobx-react';
+import Footer from './components/footer'
+import './App.css';
 
-@inject('apples')
-@observer
 class App extends Component {
   render() {
       return (
-        <div className="App">
-          <div>
-            <div>苹果篮子</div>
-            <div>
-              <span>当前1</span>
-              <span>吃掉2</span>
-            </div>
-          </div>
-          <AppleList />
-        </div>
-      )
+      <section className="App">
+        <Header />
+        <AppleList />
+        <Footer />
+      </section>
+    )
   }
 }
 
